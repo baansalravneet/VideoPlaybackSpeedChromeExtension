@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta
+            name="description"
+            content="Video Playback Speed — Chrome extension"
+        />
+        <title>Video Playback Speed Control</title>
+
+        <!-- Recommended for Chrome extension pages: prevent referrer leakage -->
+        <meta name="referrer" content="no-referrer" />
+        <style>
+            body {
+                font-family: sans-serif;
+                padding: 10px;
+                width: 500px;
+            }
+            #value {
+                font-weight: bold;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <label>
+            Speed:
+            <span id="speedLabel">1.00</span>
+        </label>
+
+        <input
+            type="range"
+            id="slider"
+            min="0.1"
+            max="4"
+            step="0.05"
+            value="1.00"
+            style="width: 100%; margin-top: 10px"
+        />
+
+        <br />
+        <button
+            id="resetBtn"
+            style="display: block; width: 25%; margin: 10px auto 0"
+        >
+            Reset Speed
+        </button>
+
+        <script src="index.js"></script>
+    </body>
+</html>

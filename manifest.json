@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Video Playback Speed Control",
+    "version": "1.0.0",
+    "icons": {
+        "32": "extension_icon.png"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
